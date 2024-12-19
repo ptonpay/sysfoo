@@ -23,10 +23,12 @@ pipeline {
            steps{
                echo 'step 3 Packaging'
                mvn package -DskipTests 
-           }
-    } }
+            }
+       } 
+   }
    post{
      always{
          echo 'This pipeline is completed..'
      }
-} }
+   } 
+}
