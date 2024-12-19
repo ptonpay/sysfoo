@@ -3,7 +3,7 @@ pipeline {
    triggers { pollSCM( 'H/2 * * * *' ) }
 
    tools {
-     maven 'maven 3.9.9'
+     maven 'maven 3.6.1'
    }
   
   stages{
