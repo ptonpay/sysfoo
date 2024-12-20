@@ -19,7 +19,7 @@ pipeline {
       steps {
         echo 'step 3 Packaging'
         sh 'mvn package -DskipTests'
-        sh 'sh \'echo hi Pranay\''
+        echo 'GIT_COMMIT=$GIT_COMMIT'
       }
     }
 
